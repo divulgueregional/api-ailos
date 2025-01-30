@@ -6,7 +6,7 @@ use Exception;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
 
-class Boleto
+class Boletos
 {
     private $config;
     private $url;

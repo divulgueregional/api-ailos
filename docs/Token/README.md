@@ -8,27 +8,24 @@
   curl -k -X POST https://apiendpointhml.ailos.coop.br/token -d "grant_type=password&username=Username&password=Password" -H "Authorization: Basic XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"<br>
   Peguei o valor do Authorization e funcionou em Homologação.
 
-## Erro Certificado
+## Gerar o token
 
-Ao gerar o token pode gerar erro ao ler o certificado por causa do SSL<br>
-Leia o documento SSL Erro 60 que vai auxiliá-lo para uma solução.
+Segue um exemplo de como gerar o token. Ainda em desenvolvimente, somente teste de desenvolvimento.
 
 ```php
     require '../../../vendor/autoload.php';
 
-    use Divulgueregional\ApiAilos\Boleto;
+    use Divulgueregional\ApiAilos\Boletos;
 
     $config = [
-        'certificate' => '../cert/Inter_API_Certificado.crt',//local do certificado crt
-        'certificateKey' => '../cert/Inter_API_Chave.key',//local do certificado key
+        'producao' => 0, // 0- homologação, 1- produção
+        $Authorization = '';// Authorization
     ];
 
-    $client_id = '';//seu client_id
-    $client_secret = '';//client_secret
     try {
-        $bankingInter = new InterBanking($config);
+        $ailos = new Boletos($config);
 
-        $token = $bankingInter->getToken($client_id, $client_secret);
+        $token = $ailos->gerarToken();
         print_r($token);
     } catch (\Exception $e) {
         echo $e->getMessage();
