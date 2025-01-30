@@ -1,19 +1,19 @@
 <?php return array(
     'root' => array(
-        'name' => 'ailos/api-ailos',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'name' => 'divulgueregional/api-ailos',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'a49708d79e60749943e97ca1017d49556fc201d6',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
         'dev' => true,
     ),
     'versions' => array(
-        'ailos/api-ailos' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => null,
+        'divulgueregional/api-ailos' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'a49708d79e60749943e97ca1017d49556fc201d6',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
