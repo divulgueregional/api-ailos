@@ -1,5 +1,5 @@
 {
-    "name": "ailos/api-ailos",
+    "name": "divulgueregional/api-ailos",
     "description": "Geração de boletos através da api ailos",
     "license": "MIT",
     "autoload": {
