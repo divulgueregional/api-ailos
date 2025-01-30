@@ -21,7 +21,7 @@ composer require divulgueregional/api-ailos
 Pela última tag: </b>
 
 ```php
-composer update divulgueregional/api-ailos 1.0.0
+composer update divulgueregional/api-ailos 1.0.1
 ```
 
 ## Documentação:
