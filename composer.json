@@ -1,0 +1,19 @@
+{
+    "name": "ailos/api-ailos",
+    "description": "Geração de boletos através da api ailos",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Divulgueregional\\ApiAilos\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Roseno Matos",
+            "email": "rosenomatos@gmail.com.br"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.0"
+    }
+}
